@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Statistics
@@ -23,8 +23,9 @@ namespace Statistics
                 ComputedStats.average = ComputedStats.CalculateAverage(numbers);
                 ComputedStats.min = ComputedStats.CalculateMin(numbers);
                 ComputedStats.max = ComputedStats.CalculateMax(numbers);
-                
             }
-            return ComputedStats;
+            
+        return ComputedStats;
+        }
     }
 }
