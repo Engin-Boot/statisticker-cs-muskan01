@@ -11,8 +11,8 @@ namespace Statistics.Test
         {
             var statsComputer = new StatsComputer();
             var computedStats = statsComputer.CalculateStatistics(
-                new List<float>{1.5, 8.9, 3.2, 4.5});
-            float epsilon = 0.001F;
+                new List<Double>{1.5, 8.9, 3.2, 4.5});
+            Double epsilon = 0.001;
             Assert.True(Math.Abs(statsComputer.average - 4.525) <= epsilon);
             Assert.True(Math.Abs(statsComputer.max - 8.9) <= epsilon);
             Assert.True(Math.Abs(statsComputer.min - 1.5) <= epsilon);
