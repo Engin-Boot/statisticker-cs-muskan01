@@ -16,8 +16,8 @@ namespace Statistics
         {
             
             Double sum = numbers[0];
-            int n = numbers.Count;
-            for (int i=1; i < n ; i++)
+            int listCapacity = numbers.Count;
+            for (int i=1; i < listCapacity ; i++)
             {
                 sum += numbers[i];
             }
@@ -46,7 +46,7 @@ namespace Statistics
         {
             Double maximum = numbers[0];
             int listCapacity = numbers.Count;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < listCapacity; i++)
             {
                 Double valueToCompare = numbers[i];
                 if (valueToCompare > maximum)
