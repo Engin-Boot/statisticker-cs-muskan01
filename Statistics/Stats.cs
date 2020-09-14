@@ -30,13 +30,13 @@ namespace Statistics
         {
            
             Double minimum = numbers[0];
-            int n = numbers.Count;
-            for (int i = 0; i < n; i++)
+            int listCapacity = numbers.Count;
+            for (int i = 0; i < listCapacity; i++)
             {
-                Double a = numbers[i];
-                if ( a < minimum)
+                Double valueToCompare = numbers[i];
+                if ( valueToCompare < minimum)
                 {
-                    minimum = a;
+                    minimum = valueToCompare;
                 }
             }
             return minimum;
@@ -45,13 +45,13 @@ namespace Statistics
         public Double CalculateMax(List<Double> numbers)
         {
             Double maximum = numbers[0];
-            int n = numbers.Count;
+            int listCapacity = numbers.Count;
             for (int i = 0; i < n; i++)
             {
-                dynamic a = numbers[i];
-                if (a > maximum)
+                Double valueToCompare = numbers[i];
+                if (valueToCompare > maximum)
                 {
-                    maximum = a;
+                    maximum = valueToCompare;
                 }
             }
             return maximum;     
