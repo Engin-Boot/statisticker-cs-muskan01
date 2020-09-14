@@ -22,7 +22,7 @@ namespace Statistics
                 sum += numbers[i];
             }
 
-          return sum/n;
+          return sum/listCapacity;
             
         }
 
