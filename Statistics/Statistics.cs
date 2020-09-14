@@ -5,17 +5,14 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        //public Stats CalculateStatistics(List<float> numbers) {
-            //Implement statistics here
-        //}
-        public Stats<T> CalculateStatistics<T>(List<T> numbers)
+        public Stats CalculateStatistics(List<Double> numbers)
         {
-            Stats<T> ComputedStats = new Stats<T>();
+            Stats ComputedStats = new Stats();
             if (numbers.Count == 0)
             {
-                ComputedStats.average = (dynamic)Double.NaN;
-                ComputedStats.min = (dynamic)Double.NaN;
-                ComputedStats.max = (dynamic)Double.NaN;
+                ComputedStats.average = Double.NaN;
+                ComputedStats.min = Double.NaN;
+                ComputedStats.max = Double.NaN;
             }
 
             else
