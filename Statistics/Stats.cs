@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Statistics
 {
-    class Stats
+    public class Stats
     {   public Double average;
         public Double min;
         public Double max;
